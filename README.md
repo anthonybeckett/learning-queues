@@ -6,10 +6,17 @@ Uses Laravel Sail with a Redis container.
 
 ### Setup Notes
 
+Main database used is SQLite as it is only a small project.
+
 Pull package and run
 
 ```
 ./vendor/bin/sail up -d
+```
+
+Running the queue and handle failed jobs
+```
+./vendor/bin/sail artisan queue:work --tries=5 --timeout=60
 ```
 
 XDebug
@@ -32,7 +39,7 @@ Change the setting to connect to an existing connection and not start a new one 
 
 Next go into the PHP > Servers and create a new server.
 ```
-server: 0.0.0.0
+host: 0.0.0.0
 port: 80
 
 Enable symlink mappings option
