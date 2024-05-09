@@ -32,7 +32,7 @@ Change the setting to connect to an existing connection and not start a new one 
 
 Next go into the PHP > Servers and create a new server.
 ```
-server: 127.0.0.1
+server: 0.0.0.0
 port: 80
 
 Enable symlink mappings option
