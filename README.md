@@ -19,7 +19,7 @@ Running the queue and handle failed jobs
 ./vendor/bin/sail artisan queue:work --tries=5 --timeout=60
 ```
 
-XDebug
+#### XDebug
 
 Guide to get XDebug running in PHP Storm
 
