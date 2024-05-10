@@ -39,7 +39,8 @@ Change the setting to connect to an existing connection and not start a new one 
 
 Next go into the PHP > Servers and create a new server.
 ```
-host: 0.0.0.0
+// Use this host if using the debug extension
+host: 0.0.0.0 
 port: 80
 
 Enable symlink mappings option
